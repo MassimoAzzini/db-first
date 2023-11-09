@@ -1,5 +1,5 @@
 <?php 
-class Car{
+class CarInfo{
   public $key;
   public $characteristics_key;
   public $exemple;

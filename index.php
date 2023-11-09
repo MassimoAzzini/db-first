@@ -1,6 +1,6 @@
 <?php 
 
-require_once __DIR__ . '/Model/Car.php';
+require_once __DIR__ . '/Model/CarInfo.php';
 require_once __DIR__ . '/db/db.php';
 
 ?>
@@ -28,11 +28,11 @@ require_once __DIR__ . '/db/db.php';
         </tr>
       </thead>
       <tbody>
-        <?php foreach($cars as $car): ?>
+        <?php foreach($car_info as $info): ?>
           <tr>
-            <td><?php echo $car->key ?></td>
-            <td><?php echo implode(' - ', $car->characteristics_key) ?></td>
-            <td><?php echo $car->exemple ?></td>
+            <td><?php echo $info->key ?></td>
+            <td><?php echo implode(' - ', $info->characteristics_key) ?></td>
+            <td><?php echo $info->exemple ?></td>
           </tr>
           <?php endforeach; ?>
       </tbody>
